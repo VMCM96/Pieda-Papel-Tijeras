@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+:root {
+    ---Color-Black: #000000;
+    ---Color-White: #F5F1F3;
+    ---Color-Blue: #2942FB;
+    ---Color-Pink: #F3B6AF;
+
+}
+
+body {
+    background-color: var(---Color-Black);
+    color: var(---Color-White);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(---Color-Blue);
+    color: var(---Color-White);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+}
+
+.marcador {
+    background-color: var(---Color-Pink);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(---Color-Black);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre{
+    position: absolute;
+    color: var(---Color-White);
+    background-color: var(---Color-Black);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(---Color-Pink);
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 1.6rem;
+}
+
+.elegi-tu-arma {
+    margin-bottom: .5rem;
+}
+
+.elegi-tu-arma h2 { 
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.arma {
+    font-size: 2rem;
+    background-color: var(---Color-White);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-bottom: 1.50rem;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.90;
+}
+
+.mensaje .eleccion {
+    color: var(---Color-White);
+    background-color: var(---Color-Blue);
+    border-radius: .25rem;
+    padding-inline: 0.25rem;
+
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(---Color-Pink);
+    color: var(---Color-Black);
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(---Color-White);
+}
+
+main p {
+    font-size: 1.2rem;
+}
+
+.disabled {
+    display: none;
+}
